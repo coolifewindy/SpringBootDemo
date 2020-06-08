@@ -1,0 +1,2 @@
+# SpringBootDemo
+SpringBoot整合了SpringSecurity和Mybatis实现了简单的CRUD和权限管理
