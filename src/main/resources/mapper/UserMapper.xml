@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo5.mapper.UserMapper">
+    <select id="findAll" resultType="com.example.demo5.bean.User">
+        SELECT * FROM t_user
+    </select>
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.example.demo5.bean.User">
+        insert into t_user(name,password)values(#{name},#{password})
+    </insert>
+    <select id="getUserById" resultType="com.example.demo5.bean.User">
+        select * from t_user where 1=1
+        <if test="name !=null and name!=''">
+            <choose>
+                <when test="id>5">
+                    and id=7
+                </when>
+                <otherwise>
+                    and id=3
+                </otherwise>
+            </choose>
+        </if>
+    </select>
+    <delete id="deleteUserById">
+        delete from t_user where id= #{id}
+    </delete>
+    <update id="updateUser">
+        update t_user
+            set `name`=#{name},
+            password=#{password}
+        where id=#{id}
+    </update>
+</mapper>
