@@ -1,8 +1,8 @@
-package com.example.demo5.service.serviceimpl;
+package com.example.chan.service.serviceimpl;
 
-import com.example.demo5.bean.User;
-import com.example.demo5.mapper.UserMapper;
-import com.example.demo5.service.UserService;
+import com.example.chan.bean.User;
+import com.example.chan.mapper.UserMapper;
+import com.example.chan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

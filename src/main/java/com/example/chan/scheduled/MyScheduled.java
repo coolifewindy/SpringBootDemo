@@ -1,4 +1,4 @@
-package com.example.demo5.scheduled;
+package com.example.chan.scheduled;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

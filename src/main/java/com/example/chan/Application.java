@@ -1,15 +1,17 @@
-package com.example.demo5;
+package com.example.chan;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.example.demo5.mapper")
-public class Demo5Application {
+@EnableScheduling
+@MapperScan("com.example.chan.mapper")
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Demo5Application.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

@@ -1,9 +1,8 @@
-package com.example.demo5.controller;
+package com.example.chan.controller;
 
-import com.example.demo5.bean.User;
-import com.example.demo5.service.UserService;
+import com.example.chan.bean.User;
+import com.example.chan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

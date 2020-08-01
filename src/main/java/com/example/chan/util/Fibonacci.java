@@ -1,4 +1,4 @@
-package com.example.demo5.util;
+package com.example.chan.util;
 
 public class Fibonacci {
     public static void main(String[] args) {

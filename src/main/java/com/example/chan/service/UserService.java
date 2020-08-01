@@ -1,12 +1,10 @@
-package com.example.demo5.mapper;
+package com.example.chan.service;
 
-import com.example.demo5.bean.User;
-import org.apache.ibatis.annotations.Mapper;
+import com.example.chan.bean.User;
 
 import java.util.List;
 
-@Mapper
-public interface UserMapper {
+public interface UserService {
     List<User> findAll();
 
     void addUser(User user);
